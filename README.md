@@ -11,7 +11,7 @@ If an employee is deleted from the table, the total spend on salaries is updated
 
 Checklist
 
-[ ] Make input fields for employee first name, last name, ID number, job title, and annual salary
+[x] Make input fields for employee first name, last name, ID number, job title, and annual salary
 
 [ ] Make a submit button that collects the information
 
