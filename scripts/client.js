@@ -7,5 +7,12 @@ function readyNow(){
 }//end readyNow
 
 function grabInfo(){
-    console.log('I was clicked!');
+    let newEmployee = {
+        firstName: $('#inputFirstName').val(),
+        lastName: $('#inputLastName').val(),
+        employeeID: $('#inputID').val(),
+        jobTitle: $('#inputJobTitle').val(),
+        annualSalary: $('#inputSalary').val()
+    }//end newEmployee
+    console.log(newEmployee);
 }
