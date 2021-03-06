@@ -13,9 +13,9 @@ Checklist
 
 [x] Make input fields for employee first name, last name, ID number, job title, and annual salary
 
-[ ] Make a submit button that collects the information
+[x] Make a submit button that collects the information
 
-[ ] Submit button stores the information i.e. pushes into an array
+[x] Submit button stores the information i.e. pushes into an array
 
 [ ] Write a function that calculates the monthly costs from employee information
 
