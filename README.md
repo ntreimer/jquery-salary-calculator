@@ -17,9 +17,11 @@ Checklist
 
 [x] Submit button stores the information i.e. pushes into an array
 
-[ ] Write a function that calculates the monthly costs from employee information
+[x] Write a function that calculates the monthly costs from employee information
 
-[ ] Append the calculated info and other employee info to table on DOM
+[ ] Append the employee info to table on DOM
+
+[ ] Append the calculated cost to DOM
 
 [ ] Add red background color to row if monthly cost exceeds $20,000
 
