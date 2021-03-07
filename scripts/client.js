@@ -5,6 +5,7 @@ let monthlyCost = 0;
 
 function readyNow(){
     $('#submitButton').on('click', grabInfo);
+    $('#tableBody').on('click', '.deleteButton', deleteRow);
 }//end readyNow
 
 function addToTable(object){
@@ -27,6 +28,10 @@ function calculateMonthlyCost(array){
     monthlyCost = (totalSalary / 12).toFixed(2);
     return monthlyCost;
 }//end calculateMonthlyCost
+
+function deleteRow(){
+    $(this).parent().parent().remove();
+}
 
 function grabInfo(){
     //empty current monthlyCost

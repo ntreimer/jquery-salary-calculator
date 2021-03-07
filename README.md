@@ -25,7 +25,7 @@ Checklist
 
 [x] Add red background color to monthly cost if monthly cost exceeds $20,000
 
-[ ] Create a delete button that removes row from DOM
+[x] Create a delete button that removes row from DOM
 
 
 STRETCH Checklist
