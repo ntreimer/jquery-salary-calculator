@@ -4,9 +4,20 @@ body {
 
 table, th, td {
     border: 1px solid black;
+    background-color: lightgray;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: lightgray;
+}
+
+tbody {
+    background-color: white;
 }
 
 #empTable {
+    width: 80%;
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;

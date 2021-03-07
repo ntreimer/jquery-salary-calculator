@@ -23,7 +23,7 @@ Checklist
 
 [ ] Append the calculated cost to DOM
 
-[ ] Add red background color to row if monthly cost exceeds $20,000
+[ ] Add red background color to monthly cost if monthly cost exceeds $20,000
 
 [ ] Create a delete button that removes row from DOM
 
