@@ -19,7 +19,7 @@ Checklist
 
 [x] Write a function that calculates the monthly costs from employee information
 
-[ ] Append the employee info to table on DOM
+[x] Append the employee info to table on DOM
 
 [ ] Append the calculated cost to DOM
 

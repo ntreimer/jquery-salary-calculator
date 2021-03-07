@@ -5,7 +5,6 @@ let monthlyCost = 0;
 
 function readyNow(){
     $('#submitButton').on('click', grabInfo);
-
 }//end readyNow
 
 function addToTable(object){
@@ -17,7 +16,7 @@ function addToTable(object){
     <td> ${object.annualSalary} </td>
     <td style="text-align: center"> <button class="deleteButton">Delete</button> </td>
     </tr>`);
-}
+}//end addToTable
 
 function calculateMonthlyCost(array){
     let totalSalary = 0;
@@ -25,11 +24,12 @@ function calculateMonthlyCost(array){
     for (let i = 0; i < array.length; i++) {
         totalSalary += array[i].annualSalary;
     }//end for
-    monthlyCost = totalSalary / 12;
+    monthlyCost = (totalSalary / 12).toFixed(2);
     return monthlyCost;
 }//end calculateMonthlyCost
 
 function grabInfo(){
+    //empty current monthlyCost
     //grab information from input fields and make an object
     let newEmployee = {
         firstName: $('#inputFirstName').val(),
@@ -44,6 +44,7 @@ function grabInfo(){
     monthlyCost = calculateMonthlyCost(employeeInfo);
     //append employee info to DOM
     addToTable(newEmployee);
+    showMonthlyCost();
     //clear input fields of info
     $('#inputFirstName').val('');
     $('#inputLastName').val('');
@@ -52,3 +53,7 @@ function grabInfo(){
     $('#inputSalary').val('');
 }//end grabInfo
 
+function showMonthlyCost(){
+    $('#totalMonthly').empty();
+    $('#totalMonthly').append(`Total Monthly: $ ${monthlyCost}`);
+}//end showMonthlyCost
