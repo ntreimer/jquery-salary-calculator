@@ -9,19 +9,21 @@ function readyNow(){
 }//end readyNow
 
 function addToTable(object){
-    $('#empTable').append(`<td> ${object.firstName} </td>`);
-    $('#empTable').append(`<td> ${object.lastName} </td>`);
-    $('#empTable').append(`<td> ${object.employeeID} </td>`);
-    $('#empTable').append(`<td> ${object.jobTitle} </td>`);
-    $('#empTable').append(`<td> ${object.annualSalary} </td>`);
-    $('#empTable').append('<td style="text-align: center"> <button class="deleteButton">Delete</button> </td>');
+    $('#tableBody').append(`<tr>
+    <td> ${object.firstName} </td>
+    <td> ${object.lastName} </td>
+    <td> ${object.employeeID} </td>
+    <td> ${object.jobTitle} </td>
+    <td> ${object.annualSalary} </td>
+    <td style="text-align: center"> <button class="deleteButton">Delete</button> </td>
+    </tr>`);
 }
 
 function calculateMonthlyCost(array){
     let totalSalary = 0;
     monthlyCost = 0;
     for (let i = 0; i < array.length; i++) {
-        totalSalary += Number(array[i].annualSalary);
+        totalSalary += array[i].annualSalary;
     }//end for
     monthlyCost = totalSalary / 12;
     return monthlyCost;
@@ -32,9 +34,9 @@ function grabInfo(){
     let newEmployee = {
         firstName: $('#inputFirstName').val(),
         lastName: $('#inputLastName').val(),
-        employeeID: $('#inputID').val(),
+        employeeID: Number($('#inputID').val()),
         jobTitle: $('#inputJobTitle').val(),
-        annualSalary: $('#inputSalary').val()
+        annualSalary: Number($('#inputSalary').val())
     }//end newEmployee
     //push that object into the employeeInfo array
     employeeInfo.push(newEmployee);
