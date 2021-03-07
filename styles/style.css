@@ -2,9 +2,12 @@ body {
     background-color: rgb(240, 193, 65);
 }
 
+table {
+    background-color: lightgray;
+}
+
 table, th, td {
     border: 1px solid black;
-    background-color: lightgray;
     border-collapse: collapse;
 }
 
@@ -21,4 +24,9 @@ tbody {
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
+}
+
+#totalMonthly {
+    width: fit-content;
+    margin-left: auto;
 }

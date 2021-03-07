@@ -40,11 +40,14 @@ function grabInfo(){
     }//end newEmployee
     //push that object into the employeeInfo array
     employeeInfo.push(newEmployee);
-    //calculate the monthly cost of all the employees
-    monthlyCost = calculateMonthlyCost(employeeInfo);
     //append employee info to DOM
     addToTable(newEmployee);
+    //calculate the monthly cost of all the employees
+    monthlyCost = calculateMonthlyCost(employeeInfo);
+    //display calculated monthly cost on DOM
     showMonthlyCost();
+    //make monthly cost red if over $20k
+    monthlyExceedCheck();
     //clear input fields of info
     $('#inputFirstName').val('');
     $('#inputLastName').val('');
@@ -52,6 +55,12 @@ function grabInfo(){
     $('#inputJobTitle').val('');
     $('#inputSalary').val('');
 }//end grabInfo
+
+function monthlyExceedCheck(){
+    if(monthlyCost>20000){
+        $('#totalMonthly').css("background-color", "red");
+    }
+}//end monthlyExceedCheck
 
 function showMonthlyCost(){
     $('#totalMonthly').empty();
