@@ -31,7 +31,7 @@ function calculateMonthlyCost(array){
 
 function deleteRow(){
     $(this).parent().parent().remove();
-}
+}//end deleteRow
 
 function grabInfo(){
     //empty current monthlyCost

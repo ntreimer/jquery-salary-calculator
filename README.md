@@ -2,36 +2,15 @@
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-I created a form that collects employee information, calculates their monthly costs, and adds their information to a table. The program can also identify which monthly costs are exceeding $20,000.
+This application records employee salaries and adds salaries up to report monthly costs.
 
-(stretch)
-If an employee is deleted from the table, the total spend on salaries is updated.
+An input form collects _employee first name, last name, ID number, job title, annual salary_.
 
+The 'Submit' button collects the form information, stores the information to calculate monthly costs, appends information to the DOM and clears the input fields. Using the stored information,  monthly costs are calculated and appended to the DOM. If the total monthly cost exceeds $20,000, a red background color behind the total monthly cost indicates excess.
 
-Checklist
+The delete button removes an employee from the DOM.
 
-[x] Make input fields for employee first name, last name, ID number, job title, and annual salary
-
-[x] Make a submit button that collects the information
-
-[x] Submit button stores the information i.e. pushes into an array
-
-[x] Write a function that calculates the monthly costs from employee information
-
-[x] Append the employee info to table on DOM
-
-[x] Append the calculated cost to DOM
-
-[x] Add red background color to monthly cost if monthly cost exceeds $20,000
-
-[x] Create a delete button that removes row from DOM
-
-
-STRETCH Checklist
-
-[ ] Identify which row is being removed
-
-[ ] Adjust total for removed salary
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Technologies Used
+- HTML/CSS
+- JavaScript
+- jQuery
