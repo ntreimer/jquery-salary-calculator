@@ -1,6 +1,7 @@
 # jQuery Salary Calculator
 
 ## Description
+![salary calculator](salary-calculator.png)
 
 This application records employee salaries and adds salaries up to report monthly costs.
 
@@ -11,6 +12,7 @@ The 'Submit' button collects the form information, stores the information to cal
 The delete button removes an employee from the DOM.
 
 ## Technologies Used
+
 - HTML/CSS
 - JavaScript
 - jQuery
